@@ -111,8 +111,7 @@
         port (parse-long port)]
     (tcp-pipe/start-server
      port
-     (fn [socket]
-       (tap> (type socket) )
+     (fn [^Socket socket]
        (future
          (try
            (sync-handler socket key)
