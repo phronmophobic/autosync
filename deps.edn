@@ -3,8 +3,10 @@
         datalevin/datalevin {:mvn/version "0.10.1"}
         com.taoensso/tempel {:mvn/version "1.1.0"}
         com.taoensso/nippy {:mvn/version "3.6.2"}
-        com.phronemophobic/tcp-pipe {:local/root "../tcp-pipe"}
-        com.phronemophobic/automerge-clj {:local/root "../automerge-clj"}
+        com.phronemophobic/tcp-pipe {:git/url "https://github.com/phronmophobic/tcp-pipe.git"
+                                     :git/sha "d55ed520e94669c135136a01a567a469f4924aab"}
+        com.phronemophobic/automerge-clj {:git/url "https://github.com/phronmophobic/automerge-clj.git"
+                                          :git/sha "f223344dab7027ba3edd2cf674804c1930d47c7e"}
         
         com.phronemophobic.cljonda/automerge-c-darwin-aarch64 {:mvn/version "a11222254d2f86ec9df0738e7002f15a930fe9b4-SNAPSHOT"}}
  :aliases
