@@ -23,4 +23,5 @@
    (-main fname nil))
   ([fname key-size]
    (let [key-size (or key-size 32)]
-     (save-key fname (tempel/rand-ba key-size)))))
+     (save-key fname (tempel/rand-ba key-size))
+     (println (str "key saved to \"" fname  "\".")))))
