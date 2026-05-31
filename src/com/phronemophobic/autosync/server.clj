@@ -7,11 +7,10 @@
             [clojure.java.io :as io]
             [datalevin.core :as d]
             [com.phronemophobic.tcp-pipe :as tcp-pipe]
+            [com.phronemophobic.autosync.key :as key]
             [com.phronemophobic.automerge :as automerge])
   (:import [java.nio.charset StandardCharsets]
            [java.net InetSocketAddress Socket StandardSocketOptions ServerSocket]
-           java.io.ByteArrayInputStream
-           java.io.ByteArrayOutputStream
            java.io.File
            java.io.DataOutputStream
            java.io.DataInputStream))
@@ -100,18 +99,6 @@
   
   ,)
 
-(defn save-key [f key]
-  (with-open [os (io/output-stream f)
-              bais (ByteArrayInputStream. key)]
-    (io/copy bais
-             os)))
-(defn load-key [f]
-  (let [f (io/file f)
-        size (.length f)]
-    (with-open [is (io/input-stream f)
-                baos (ByteArrayOutputStream. size)]
-      (io/copy is baos)
-      (.toByteArray baos))))
 
 (comment
   (save-key "foo.key" (byte-array (range 255)))
@@ -120,7 +107,7 @@
   ,)
 
 (defn -main [port key-file]
-  (let [key (load-key key-file)
+  (let [key (key/load-key key-file)
         port (parse-long port)]
     (tcp-pipe/start-server
      port
