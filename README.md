@@ -7,13 +7,13 @@ An opinioned server and client for syncing automerge documents.
 
 ### Generate a key
 
-$ clojure -M -m com.phronemophobic.autosync.key 'my.key'
-key saved to "my.key"
+    $ clojure -M -m com.phronemophobic.autosync.key 'my.key'
+    key saved to "my.key"
 
 ### Start an autosync server
 
-$ clojure -M -m com.phronemophobic.autosync.server 5001 my.key 
-server started...
+    $ clojure -M -m com.phronemophobic.autosync.server 5001 my.key 
+    server started...
 
 ### Sync your automerge documents
 
