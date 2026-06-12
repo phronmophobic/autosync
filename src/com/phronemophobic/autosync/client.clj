@@ -20,7 +20,7 @@
     (with-open [^java.io.Closeable
                 client (tcp-pipe/start-client host port key write-ch read-ch)]
       (loop []
-        (let [_ (automerge/commit! doc)
+        (let [;; _ (automerge/commit! doc)
               sync-message (automerge/generate-sync-message doc sync-state)
 
               message (if sync-message
