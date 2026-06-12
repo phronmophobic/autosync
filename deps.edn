@@ -7,7 +7,7 @@
         com.phronemophobic/tcp-pipe {:git/url "https://github.com/phronmophobic/tcp-pipe.git"
                                      :git/sha "d55ed520e94669c135136a01a567a469f4924aab"}
         com.phronemophobic/automerge-clj {:git/url "https://github.com/phronmophobic/automerge-clj.git"
-                                          :git/sha "7a3fe94fa798fdedf1948c70666caf275c2001fb"}
+                                          :git/sha "ab1c259d5af1174d3ae40cc1f65247e14e8eb613"}
         
         com.phronemophobic.cljonda/automerge-c-darwin-aarch64 {:mvn/version "a11222254d2f86ec9df0738e7002f15a930fe9b4"}
         com.phronemophobic.cljonda/automerge-c-linux-x86-64 {:mvn/version "a11222254d2f86ec9df0738e7002f15a930fe9b4"}}
