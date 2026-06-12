@@ -8,7 +8,7 @@
         com.phronemophobic/automerge-clj {:git/url "https://github.com/phronmophobic/automerge-clj.git"
                                           :git/sha "7a3fe94fa798fdedf1948c70666caf275c2001fb"}
         
-        com.phronemophobic.cljonda/automerge-c-darwin-aarch64 {:mvn/version "a11222254d2f86ec9df0738e7002f15a930fe9b4-SNAPSHOT"}
+        com.phronemophobic.cljonda/automerge-c-darwin-aarch64 {:mvn/version "a11222254d2f86ec9df0738e7002f15a930fe9b4"}
         com.phronemophobic.cljonda/automerge-c-linux-x86-64 {:mvn/version "a11222254d2f86ec9df0738e7002f15a930fe9b4"}}
  :aliases
  {:test {:extra-paths ["test"]
