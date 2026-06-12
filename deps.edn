@@ -3,6 +3,7 @@
         datalevin/datalevin {:mvn/version "0.10.1"}
         com.taoensso/tempel {:mvn/version "1.1.0"}
         com.taoensso/nippy {:mvn/version "3.6.2"}
+        org.replikativ/konserve {:mvn/version "0.9.347"}
         com.phronemophobic/tcp-pipe {:git/url "https://github.com/phronmophobic/tcp-pipe.git"
                                      :git/sha "d55ed520e94669c135136a01a567a469f4924aab"}
         com.phronemophobic/automerge-clj {:git/url "https://github.com/phronmophobic/automerge-clj.git"
